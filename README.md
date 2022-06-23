@@ -28,9 +28,7 @@ The easiest way to deploy this Bot is via Heroku.
 
 ## CREDIT
 ```
-<𝗔𝗗/>
-
-[![Adarsh]()](https://t.me/Im_naughty_you_hotty)
+<𝗔𝗗/> [![Adarsh]()](https://t.me/Im_naughty_you_hotty)
 
 ```
 
