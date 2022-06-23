@@ -30,5 +30,5 @@ The easiest way to deploy this Bot is via Heroku.
 
 <𝗔𝗗/>
 
-[![Adarsh]](https://t.me/Im_naughty_you_hotty)
+[![Adarsh](https://te.legra.ph/file/67c538b4cad6d8c61fa58.jpg)](https://t.me/Im_naughty_you_hotty)
 
