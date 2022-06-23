@@ -1,5 +1,3 @@
-# Harleybot
-
 <p align="center">
   <img src="https://te.legra.ph/file/fb852c168f7dfb653f59e.jpg">
 </p>
@@ -30,7 +28,9 @@ The easiest way to deploy this Bot is via Heroku.
 
 ## CREDIT
 ```
-<𝗔𝗗/>(https//t.me/OfficialAD)
+<𝗔𝗗/>
+
+<a href="https://telegram.me/Im_naughty_you_hotty"><img src="https://img.shields.io/badge/%20Developer-blue.svg?style=for-the-badge&logo=Telegram"></a>
 ```
 
  
