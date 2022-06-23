@@ -31,6 +31,7 @@ The easiest way to deploy this Bot is via Heroku.
 <𝗔𝗗/>
 
 <a href="https://telegram.me/Im_naughty_you_hotty"><img src="https://img.shields.io/badge/%20Developer-blue.svg?style=for-the-badge&logo=Telegram"></a>
+
 ```
 
  
