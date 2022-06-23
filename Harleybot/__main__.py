@@ -100,7 +100,7 @@ buttons = [
     [
         InlineKeyboardButton(text="Aꜱꜱɪꜱᴛᴀɴᴛ", callback_data="Harleybot_asst"),
         InlineKeyboardButton(
-            text="SᴏᴜʀᴄᴇCᴏᴅᴇ", url="https://github.com/AdarshuXD/Harleybot"
+            text="SᴏᴜʀᴄᴇCᴏᴅᴇ", url="https://github.com/Adarshu/Harleybot"
         ),
     ],
     [
@@ -110,7 +110,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="Sᴜᴍᴍᴏɴ Mᴇ", url="http://t.me/MissLyraRobot?startgroup=true"),
+        InlineKeyboardButton(text="Sᴜᴍᴍᴏɴ Mᴇ", url="http://t.me/Harleybot?startgroup=true"),
     ],
 ]
 
@@ -126,7 +126,7 @@ HELP_STRINGS = """
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- @Xd_Nitric's 💕"""
+ @OfficialAD's 💕"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -139,7 +139,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("MissLyraRobot.modules." + module_name)
+    imported_module = importlib.import_module("Harleybot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -247,7 +247,7 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/XCodeSupport")]]
+                [[InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/Anmol_dost")]]
             ),
         )
         
@@ -377,9 +377,9 @@ def help_button(update, context):
 
 def MissLyraRobot_about_callback(update, context):
     query = update.callback_query
-    if query.data == "MissLyraRobot_":
+    if query.data == "Harleybot_":
         query.message.edit_text(
-            text=""" *Lyra* - `A bot to manage your groups with additional features!`
+            text=""" *Harley* - `A bot to manage your groups with additional features!`
             \n`Here the basic help regarding use of MissLyraRobot.`
             
             \n`Almost all modules usage defined in the help menu, checkout by sending` `/help`
@@ -390,17 +390,17 @@ def MissLyraRobot_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Bᴜɢ'ꜱ", url="https://t.me/XCodeSupport"
+                            text="Bᴜɢ'ꜱ", url="https://t.me/Anmol_Dost"
                         ),
                         InlineKeyboardButton(
-                            text="Bᴏᴛ Lɪꜱᴛ", url="https://t.me/TheXCodeTeam"
+                            text="Bᴏᴛ Lɪꜱᴛ", url="https://t.me/OfficialAD"
                         ),
                     ],
-                    [InlineKeyboardButton(text="Back", callback_data="MissLyraRobot_back")],
+                    [InlineKeyboardButton(text="Back", callback_data="Harleybot_back")],
                 ]
             ),
         )
-    elif query.data == "MissLyraRobot_back":
+    elif query.data == "Harleybot_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
@@ -414,7 +414,7 @@ def MissLyraRobot_about_callback(update, context):
                 timeout=60,
                 disable_web_page_preview=False,
         )
-    elif query.data == "MissLyraRobot_basichelp":
+    elif query.data == "Harleybot_basichelp":
         query.message.edit_text(
             text=f"*Here's basic Help regarding* *How to use Me?*"
             
@@ -428,21 +428,21 @@ def MissLyraRobot_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Aᴅᴍɪɴ", callback_data="MissLyraRobot_admin"),
-                    InlineKeyboardButton(text="Nᴏᴛᴇꜱ", callback_data="MissLyraRobot_notes"),
+                    InlineKeyboardButton(text="Aᴅᴍɪɴ", callback_data="Harleybot_admin"),
+                    InlineKeyboardButton(text="Nᴏᴛᴇꜱ", callback_data="Harleybot_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", callback_data="MissLyraRobot_support"),
-                    InlineKeyboardButton(text="Cʀᴇᴅɪᴛ", callback_data="MissLyraRobot_credit"),
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", callback_data="Harleybot_support"),
+                    InlineKeyboardButton(text="Cʀᴇᴅɪᴛ", callback_data="Harleybot_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="MissLyraRobot_back"),
+                    InlineKeyboardButton(text="Back", callback_data="Harleybot_back"),
                  
                  ]
                 ]
             ),
         )
-    elif query.data == "MissLyraRobot_admin":
+    elif query.data == "Harleybot_admin":
         query.message.edit_text(
             text=f"*Let's Make Your Group Bit Effective Now*"
             
@@ -460,7 +460,7 @@ def MissLyraRobot_about_callback(update, context):
             ),
         )
 
-    elif query.data == "MissLyraRobot_notes":
+    elif query.data == "Harleybot_notes":
         query.message.edit_text(
             text=f"<b> Setting Up Notes</b>"
             
@@ -469,31 +469,31 @@ def MissLyraRobot_about_callback(update, context):
             f"\n\n`✗ You can also set buttons for notes and filters (refer help menu)`",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="MissLyraRobot_basichelp")]]
+                [[InlineKeyboardButton(text="Back", callback_data="Harleybot_basichelp")]]
             ),
         )
-    elif query.data == "MissLyraRobot_asst":
+    elif query.data == "Harleybot_asst":
         query.message.edit_text(
             text=f"*Hᴇʀᴇ Iꜱ Tʜᴇ Hᴇʟᴘ 「Aꜱꜱɪꜱᴛᴀɴᴛ」 Mᴏᴅᴜʟᴇ:*"
             
             f"\n*SETUP ASSISTANT*"
             f"\n\n✗ `1.) first, add me to your group.`"
             f"\n\n✗ `2.) then promote me as admin and give all permissions except anonymous admin.`"
-            f"\n\n✗ `3.) add` @MissLyraRobot `to your group:`"
+            f"\n\n✗ `3.) add` @MissHarleybot `to your group:`"
             f"\n\n✗ `4.) turn on the video chat first before start to play music.`"
-            f"\n\n✗ *Lets Enjoy The Lyra Music And Join Support Group @XCoseSupport*"
-            f"\n\n*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: @TheXCodeTeam!*",
+            f"\n\n✗ *Lets Enjoy The Lyra Music And Join Support Group @Anmol_Dost*"
+            f"\n\n*✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: @OfficialAD!*",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="MissLyraRobot_back")]]
+                [[InlineKeyboardButton(text="Back", callback_data="Harleybot_back")]]
             ),
         )
-    elif query.data == "MissLyraRobot_admin":
+    elif query.data == "Harleybot_admin":
         query.message.edit_text(
             text=f"*Let's Make Your Group Bit Effective Now*"
             
-            f"\n✗ `Congragulations, MissLyraRobot now ready to manage your group.`"
+            f"\n✗ `Congragulations, MissHarleybot now ready to manage your group.`"
             f"\n\n*Admin Tools*"
             f"\n✗ `Basic Admin tools help you to protect and powerup your group.`"
             f"\n✗ `You can ban members, Kick members, Promote someone as admin through commands of bot.`"
@@ -503,46 +503,46 @@ def MissLyraRobot_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="MissLyraRobot_basichelp")]]
+                [[InlineKeyboardButton(text="Back", callback_data="Harleybot_basichelp")]]
             ),
         )    
-    elif query.data == "MissLyraRobot_support":
+    elif query.data == "Harleybot_support":
         query.message.edit_text(
-            text="* Lyra Support Chats*"
+            text="* Harley Support Chats*"
             
             "\n\n✗ `Join Support Group/Channel`",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Lᴏɢ'ꜱ", url="t.me/LyraLogs"),
-                    InlineKeyboardButton(text="Nᴇᴡꜱ", url="t.me/TheXCodeTeam"),
+                    InlineKeyboardButton(text="Lᴏɢ'ꜱ", url="t.me/HarleyLogs"),
+                    InlineKeyboardButton(text="Nᴇᴡꜱ", url="t.me/OfficialAD"),
                  ],
                  [
-                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/XCoseSupport"),
-                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/TheXCodeTeam"),
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/Anmol_Dost"),
+                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/OfficialAD"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="MissLyraRobot_basichelp"),
+                    InlineKeyboardButton(text="Back", callback_data="Harleybot_basichelp"),
                  
                  ]
                 ]
             ),
         )
-    elif query.data == "MissLyraRobot_credit":
+    elif query.data == "Harleybot_credit":
         query.message.edit_text(
-            text=f"<b> CREDIT FOR Lyra DEV'S</b>\n"
+            text=f"<b> CREDIT FOR Harley DEV'S</b>\n"
             
-            f"\n`✗ Here Some Developers Helping in Making The Lyra Bot`",
+            f"\n`✗ Here Some Developers Helping in Making The Harley Bot`",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Nɪᴛʀɪᴄ", url="t.me/Xd_Nitric"),
-                    InlineKeyboardButton(text="Bᴀᴅɴᴀᴍ", url="t.me/iTs_Badnam"),
+                    InlineKeyboardButton(text="𝗔𝗗", url="t.me/Im_Naughty_you_hotty"),
+                    InlineKeyboardButton(text="𝗦𝗺𝗼𝗸𝗲𝗿", url="t.me/Smoker_AD"),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="MissLyraRobot_basichelp"),
+                    InlineKeyboardButton(text="Back", callback_data="Harleybot_basichelp"),
                  
                  ]
                 ]
@@ -555,8 +555,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..😻 I'm *MissLYraRobot*
-                 \nHere is the [🔥Source Code🔥](https://github.com/NitricXd/MissLyraRobot) .""",
+            text=""" Hi..😻 I'm *MissHarleybot*
+                 \nHere is the [🔥Source Code🔥](https://github.com/Adarshu/Harleybot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -809,7 +809,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1947924017 and DONATION_LINK:
+        if OWNER_ID != 2105096640 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
