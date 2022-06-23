@@ -84,7 +84,7 @@ yumi_IMG = "https://te.legra.ph/file/fb852c168f7dfb653f59e.jpg"
 PM_START_TEXT = """
 *👋 Hello {}*
 
-Hey There My Name Is *Lyra* [I](https://te.legra.ph/file/fb852c168f7dfb653f59e.jpg) Am Here To Help You Manage Your Groups!
+Hey There My Name Is *Harley* [I](https://te.legra.ph/file/fb852c168f7dfb653f59e.jpg) Am Here To Help You Manage Your Groups!
 Hit /Help To Find Out More About How To Use Me To My Full Potential!
 ────────────────────────
 乂 Ping Time: {}
