@@ -66,7 +66,7 @@ RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/Harleybot 
 RUN git clone -b shiken https://github.com/AdarshuXD/Harleybot /root/Harleybot
-WORKDIR /root/MissLyraRobot
+WORKDIR /root/Harleybot
 
 #Copy config file to /root/Harleybot/Harleybot
 COPY ./Harleybotbot/sample_config.py ./Harleybot/config.py* /root/Harleybot/Harleybot/
